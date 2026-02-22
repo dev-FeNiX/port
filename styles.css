@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  background: #0F1C18;
+  color: #1ED4A2;
+  font-family: 'Comic Neue', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 60px 0;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.main-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main-title h1 {
+  font-size: 36px;
+  color: #00B386;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #A3B5AE;
+  margin-top: 8px;
+}
+
+.console-box {
+  width: 1100px;
+  max-width: 95%;
+  height: 600px;
+  padding: 40px;
+  border-radius: 14px;
+  background: #0c1a16;
+  border: 1px solid #00B386;
+  box-shadow: 0 0 40px rgba(0, 179, 134, 0.15);
+  overflow-y: auto;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.console-input-line {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.console-prompt {
+  margin-right: 10px;
+  white-space: nowrap;
+  color: #00B386;
+}
+
+#consoleInput {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #F4F7F6;
+  font-family: inherit;
+  font-size: 18px;
+  flex: 1;
+}
+
+/* Custom Scrollbar */
+
+.console-box::-webkit-scrollbar {
+  width: 10px;
+}
+
+.console-box::-webkit-scrollbar-track {
+  background: #0c1a16;
+}
+
+.console-box::-webkit-scrollbar-thumb {
+  background: #00B386;
+  border-radius: 10px;
+}
+
+.console-box::-webkit-scrollbar-thumb:hover {
+  background: #1ED4A2;
+}
+
+.console-box {
+  scrollbar-width: thin;
+  scrollbar-color: #00B386 #0c1a16;
+}
+
+@media (max-width: 900px) {
+  .console-box {
+    height: 500px;
+    font-size: 16px;
+  }
+
+  .main-title h1 {
+    font-size: 28px;
+  }
+}
